@@ -75,7 +75,7 @@ A list of resources that I find helpful are listed in the acknowledgements.
 ### Built With
 
 * [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS-Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [CSS-Bootstrap](https://getbootstrap.com/)
 * [Javascript](https://www.javascript.com/)
 
 
