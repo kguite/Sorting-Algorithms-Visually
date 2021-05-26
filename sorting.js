@@ -120,7 +120,8 @@ function sortHelper(sorter, array) {
   }
 }
 
-// Bubble Sort: Bubble sort is a basic algorithm for arranging a string of numbers or other elements in the correct order. The method works by examining each set of adjacent elements in the string, from left to right, switching their positions if they are out of order.
+// Bubble Sort: 
+// Bubble sort works by examining each set of adjacent elements in the string, from left to right, switching their positions if they are out of order.
 
 
 function bubbleSort(array) {
@@ -222,6 +223,8 @@ function quickSort(array, qStack) {
   } 
   return qStack;
 }
+
+//Merge Sort
 
 function mergeSortHelper(array, s = 0, e = array.length - pixelDistance, mStack = []) {
   if ( s < e) {
