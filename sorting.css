@@ -5,9 +5,14 @@
 .custom-file-control::after {
     content: "Choose image...";
 }
+
+/*
 .custom-file-control::before {
     content: "Browse";
 }
+
+
+
 .custom-file-control::before {
     position: absolute;
     top: -1px;
@@ -23,3 +28,4 @@
     border: 1px solid rgba(0,0,0,.15);
     border-radius: 0 .25rem .25rem 0;
 }
+*/
