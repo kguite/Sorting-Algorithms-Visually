@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="sorting.css">
+<title>Sorting Algorithms, using Images</title>
+</head>
+
+<body>
+
+<div class="jumbotron">
+    <h1 class="display-4">Pixel Sorting Algorithms</h1>
+    <p class="lead">Welcome! Trying to understand sorting algorithms?</p>
+    <p class="lead">This is a site that contains resources and visualizations for the five most commonly used: Bubble, Merge, Quick, Insertion and Selection.</p>
+    <hr class="mr-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <img id="original-image" style="display: none;"></img>
+          <h1 class="display-6">Original</h1>
+          <canvas id="canvas"></canvas>
+        </div>
+        <div class="col-12 col-md-6">
+          <h1 class="display-6">Sorted</h1>
+          <canvas id="sorting"></canvas>
+        </div>
+      </div>
+      <div class="row justify-content-start mt-5">
+        <div class="form-group">
+          <label for="sorting-algorithm"> Algorithm: </label>
+          <select class="custom-select" id="sorting-algorithm">
+            <option value="bubble">Bubble Sort</option>
+            <option value="selection">Selection Sort</option>
+            <option value="insertion">Insertion Sort</option>
+            <option value="merge">Merge Sort</option>
+            <option value="quick" selected>Quick Sort</option>
+          </select>
+        </div>
+        <div class="ml-5 form-group">
+          <label for="image" class="custom-file">
+            <input type="file" id="image" class="file-input" accept=".png, .jpg, .jpeg, image/*">
+            <span class="custom-file-control"></span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <hr class="mr-4">
+    <p class="lead">Notes:</p>
+    <ul>
+      <li>
+        Time complexity is not accurate, this is just a visualization.
+      </li>
+      <li>
+        Merge sort creates a stack to be used, so it may run a bit slow at first.
+      </li>
+      <li>
+        For interesting visual effects, change the 'pixelDistance' variable in the JavaScript panel. This variable is used to set the distance between each pixel value in the image data array. The correct value is 4 since there are 4 pixels, RGBA.
+      </li>
+      <li>
+        For faster runtimes, make the 'imageSize' variable smaller
+      </li>
+    </ul>
+    <p>To learn more about sorting algorithms, here are some resources I enjoyed:</p>
+    <ul>
+          <li><a href="https://classic.csunplugged.org/sorting-algorithms/">CS Unplugged: Visualizing Sorting Algorithms without a Computer.</a>  I love this, and the old-school resources linked within.</li>
+          <li><a href="https://www.youtube.com/watch?v=KEEKn7Me-ms">Algorithms Youtube Playlist by HackerRank</a></li>
+          <li><a href="https://www.youtube.com/watch?v=ewd7Lf2dr5Q">MIT OpenCourseware, Intro to Computer Science and Programming, Lecture 8, Time Complexity</a></li>
+          <li><a href="https://codinghero.ai/5-sorting-algorithms-explained-to-kids/">Sorting Algorithms Explained to Kids</a></li>
+        </ul>
+  </div>
+<div class="footer">
+<p>Created by <a href="https://www.katiemarie.dev">Katie Marie</a></p>
+</div>
+
+
+</body>
+<script src="sorting.js"></script>
+</html>
